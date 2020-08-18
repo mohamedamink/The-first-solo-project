@@ -12,8 +12,15 @@ body {
 .header {
   padding: 80px;
   text-align: center;
-  background: #1abc9c;
-  color: white;
+  background-image: url("images/header.jpeg");
+  background-repeat: no-repeat;
+  background-size: 1500px 300px;
+  color: #D7D7D7;
+  font-family: cursive;
+}
+
+.header p{
+  font-size: 20px;
 }
 
 /* Increase the font size of the heading */
@@ -21,12 +28,13 @@ body {
   font-size: 40px;
 }
 
+
+/*test*/
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #333; 
 }
-
 /* Style the navigation bar links */
 .navbar a {
   float: left;
@@ -36,16 +44,52 @@ body {
   padding: 14px 20px;
   text-decoration: none;
 }
-
 /* Right-aligned link */
 .navbar a.right {
   float: right;
 }
+.subnav {
+  float: left;
+  overflow: hidden;
+}
 
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
 /* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #ddd;
   color: black;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0; 
+  background-color: gray;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+.subnav:hover .subnav-content {
+  display: block;
 }
 
 /* Column container */
